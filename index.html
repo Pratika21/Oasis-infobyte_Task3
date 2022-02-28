@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp convertor</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet"> -->
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans',sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: #0f2027;
+    background-image: url(img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: -webkit-linear-gradient(to right,#2c5364,#203A43,#0F2027);
+    background-color: linear-gradient(to right,#2c5364,#203A43,#0F2027);
+    padding: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(19, 23, 85);
+}
+
+
+label{
+    display: block;
+}
+
+.temp{
+    width: 50%;
+    padding: 50px 0;
+    background:-webkit-linear-gradient(to right,#6b92da,#203A43,#0F2027);
+    background:linear-gradient(to right,#3576ca,#4770c9,#5f77e4);
+    box-shadow: 2px 2px 20px 2px #1e1e4e;
+}
+
+.input-div{
+    display: inline-block;
+}
+.inp{
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+}
+
+label{
+    font-size: 22px;
+}
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Temprature Converter</h1>
+        </div>
+        <div class="temp">
+            <div class="input-div">
+                <label>Celcius</label>
+                <input type="number" value="0" id="cel" class="inp">
+            </div>
+            <div class="input-div">
+                <label>Farenhite</label>
+                <input type="number" value="32" id="fah" class="inp">
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
